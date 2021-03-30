@@ -1,0 +1,14 @@
+body{
+    background-color:rgb(163, 177, 173);
+}
+
+select option{
+    color: rgb(82,82,114);
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+}
+p{
+    font-family: 'Kiwi Maru', serif;
+}

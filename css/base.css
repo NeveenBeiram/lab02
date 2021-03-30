@@ -1,0 +1,19 @@
+
+header{
+    text-align: center;
+}
+
+body{
+    margin: 50px;
+    margin-bottom: 10px;
+    padding: auto;
+}
+footer{
+    clear: both;
+    text-align: center;
+    color:rgb(82, 82, 114);
+    border:1px solid blue;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Dancing Script', cursive;
+}
