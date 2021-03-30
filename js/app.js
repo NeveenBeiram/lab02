@@ -9,8 +9,8 @@ $( document ).ready( function(){
         let galary = new Galary( dataVal );
         galary.renderTemplate();
       } );
+      $('#photo-template').first().remove();
     } );
-  $('.photo-template').first().remove();//not working ask about it!
   function Galary ( obj ){
     this.title = obj.name;
     this.img = obj.image_url;
