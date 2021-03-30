@@ -1,0 +1,39 @@
+main div{
+    border:1px solid blue ;
+    height:380px;
+width: 320px;
+float: left;
+margin: 10px;
+padding:20px;
+padding-top: 30px;
+text-align:center;
+
+}
+
+div img{
+    width: 300px;
+    height: 290px;
+}
+
+
+h2{
+    text-align: center;
+    font-size: large;
+color:rgb(82, 82, 114);
+padding-top: 30px;
+}
+
+select{
+    color: blue;
+width: 150px;
+text-align: center;}
+
+
+
+
+p{
+    text-align: center;
+    color: rgb(33, 33, 209);
+    padding-top: 10px;
+    
+}

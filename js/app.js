@@ -10,18 +10,21 @@ $( document ).ready( function(){
         galary.renderTemplate();
       } );
     } );
+  $('.photo-template').first().remove();//not working ask about it!
   function Galary ( obj ){
     this.title = obj.name;
     this.img = obj.image_url;
     this.description = obj.description;
     this.keyword = obj.keyword;
-    this.hornsCount = obj.horns;
+    this.horns = obj.horns;
   }
   Galary.prototype.renderTemplate = function(){
 
     let tempClone = $( '#photo-template' ).first().clone();
     tempClone.addClass( this.keyword );
+    tempClone.find('h2').text(this.title);//not working!
     tempClone.find( 'img' ).attr( 'src',this.img );
+    tempClone.find('p').text(this.description);
     $( 'main' ).append( tempClone );
     if ( !( keywords.includes( this.keyword ) ) ){
       keywords.push( this.keyword );
