@@ -12,7 +12,7 @@ $( document ).ready( function(){
       $('#photo-template').first().remove();
     } );
   function Galary ( obj ){
-    this.title = obj.name;
+    this.title = obj.title;
     this.img = obj.image_url;
     this.description = obj.description;
     this.keyword = obj.keyword;
@@ -22,8 +22,8 @@ $( document ).ready( function(){
 
     let tempClone = $( '#photo-template' ).first().clone();
     tempClone.addClass( this.keyword );
-    tempClone.find('h2').text(this.title);//not working!
     tempClone.find( 'img' ).attr( 'src',this.img );
+    tempClone.find( 'h2' ).text( this.title );
     tempClone.find('p').text(this.description);
     $( 'main' ).append( tempClone );
     if ( !( keywords.includes( this.keyword ) ) ){
