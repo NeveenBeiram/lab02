@@ -115,12 +115,10 @@ $( document ).ready( function(){
       filterArr.sort((a,b)=>(a.horns>b.horns)?1:-1);
       renderpage(filterArr);
     }
-    if(e.target.value==='name'){
-      filterArr.sort((a,b)=>{
-        a.title.toUpperCase() < b.title.toUpperCase() ?-1:a.title.toUpperCase() > b.title.toUpperCase()?1:0;
-      });
-      renderpage(filterArr);
 
+    if(e.target.value==='title'){
+      filterArr.sort((a,b)=>(a.title>b.title)?1:-1);
+      renderpage(filterArr);
     }
   });
   // filterArr.sort((a,b)=>(a.title>b.title)?1:-1);
