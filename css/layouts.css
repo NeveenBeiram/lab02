@@ -2,7 +2,7 @@ main div{
     border:1px solid blue ;
     height:400px;
 width: 320px;
-float: left;
+/* float: left; */
 margin: 10px;
 padding:20px;
 padding-top: 10px;
